@@ -77,9 +77,11 @@ To run this project, you will need to add the following environment variables to
 
 The app relies on WebSocket for live communication. Here’s an outline of the events handled:
 
-**a. Connection Established:** When a user joins a room, a WebSocket connection is created, and the user is added to the room.
-**b. Real-Time Code Updates:** Every change in the editor (like typing, deleting) is broadcasted to other users in the same room through WebSocket events.
-**c. Room Management:** WebSocket events manage creating and joining rooms and tracking users in each room.
+**Connection Established:** When a user joins a room, a WebSocket connection is created, and the user is added to the room.
+
+** Real-Time Code Updates:** Every change in the editor (like typing, deleting) is broadcasted to other users in the same room through WebSocket events.
+
+** Room Management:** WebSocket events manage creating and joining rooms and tracking users in each room.
 
 ## Future Enhancements
 

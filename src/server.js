@@ -4,7 +4,7 @@ const http = require('http');
 const path = require('path');
 const cors = require('cors');
 const { Server } = require('socket.io');
-const ACTIONS = require('../src/Actions');
+const ACTIONS = require('./Actions');
 
 app.use(cors());
 

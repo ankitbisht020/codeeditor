@@ -65,6 +65,11 @@ io.on('connection', (socket) => {
         socket.leave();
     });
 });
+app.get('/', (req, res) => {
+    const htmlContent = '<h1>Welcome to the code editor server</h1>';
+    res.setHeader('Content-Type', 'text/html');
+    res.send(htmlContent);
+});
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
